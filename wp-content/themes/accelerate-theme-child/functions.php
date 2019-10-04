@@ -23,8 +23,8 @@ function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
             'labels' => array(
-                'name' => _( 'Case Studies' ),
-                'singular_name' => _( 'Case Study' )
+                'name' => __( 'Case Studies' ),
+                'singular_name' => __( 'Case Study' )
             ),
             'public' => true,
             'has_archive' => true,
