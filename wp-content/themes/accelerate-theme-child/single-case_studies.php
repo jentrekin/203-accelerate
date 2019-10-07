@@ -38,14 +38,14 @@ get_header(); ?>
 			</article>
 
 				<div class="case-study-images">
-					<?php if($image_1) {
-						echo wp_get_attachment_image( $image_1, $size );
+					<?php if($image1) {
+						echo wp_get_attachment_image( $image1, $size );
 					} ?>
-					<?php if($image_2) {
-					echo wp_get_attachment_image( $image_2, $size );
+					<?php if($image2) {
+					echo wp_get_attachment_image( $image2, $size );
 				 } ?>
-					<?php if($image_3) {
-					echo wp_get_attachment_image( $image_3, $size ); } ?>
+					<?php if($image3) {
+					echo wp_get_attachment_image( $image3, $size ); } ?>
 			  </div>
 
 	 <?php endwhile; // end of the loop. ?>
