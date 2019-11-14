@@ -55,7 +55,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h3><?php the_title(); ?></h3>
 	        <?php the_excerpt(); ?>
-					<a href="<?php the_permalink(); ?>" class="read-more-link"></a>
+					<a href="<?php the_permalink(); ?>" class="read-more-link"></a> <!-- get rid off? -->
   <?php endwhile; ?>
 <?php wp_reset_query(); ?>
    </div>

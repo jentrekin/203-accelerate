@@ -13,17 +13,20 @@ Text Domain:  accelerate-theme-child
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-    height: auto;
-    padding: 8em 0;
-	text-align: center;
+    margin-bottom: 25px;
 }
-.homepage-hero h1 {
-	color: #fff;
-	font-weight:bold;
-	font-size: 2em;
-	line-height: 1.5;
-	margin: 0 2%;
+.social-media-navigation {
+		float: right;
+		width: 20%;
+	}
+
+h1 {
+   font-size: 24px;
+   font-size: 1.5em;
+   line-height: 2.25;
+   color: white;
 }
+
 .homepage-hero h3 {
     color: #fff;
     font-family: 'Open Sans';
@@ -32,9 +35,9 @@ Text Domain:  accelerate-theme-child
     margin: 0 0 3em;
 }
 
+
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
-
 }
 
 .button {
@@ -93,11 +96,6 @@ aside.case-study-sidebar {
 }
 
 
-div.case-study-images {
-  float: left;
-  width: 500px;
-}
-
 div.case-study-images img {
 	width: 100%;
 	height: auto;
@@ -107,16 +105,23 @@ div.case-study-images img {
 /*Featured Work */
 
 .featured-work {
-  margin: 10px;
+  margin: 5px;
+  padding: 10px;
   font-family: 'Montserrat';
 }
 
 .featured-work h4 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 18px;
-  color: black;
-  margin: 45px;
+  font-size: 28px;
+  color: #000000;
+  margin: 5px;
+}
+
+.featured-work h3 {
+  font-size: 22px;
+  font-family: 'Open Sans';
+  margin: 5px;
 }
 
 .featured-work ol, ul {
@@ -125,16 +130,24 @@ div.case-study-images img {
 
 .individual-featured-work {
   display: inline-block;
-  align: center;
-  margin: 0 5px 0 5px;
-
+  align-items: center;
 }
-
 .individual-featured-work a {
   text-decoration: none;
   font-weight: normal;
-  font-size: 12px;
-  color: #000000;
-  padding-left: 80px;
+  font-size: 14px;
+  color: black;
+  padding-left: 50px;
   align: center;
+}
+
+.individual-featured-work img {
+  clear: both;
+  padding-right: 15px;
+
+}
+
+.social-media-navigation {
+  display: inline-block;
+  color: blue;
 }

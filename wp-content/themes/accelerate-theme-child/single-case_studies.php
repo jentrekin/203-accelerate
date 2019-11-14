@@ -29,7 +29,7 @@ get_header(); ?>
 			<article class="case-study">
 				<aside class="case-study-sidebar">
 					<h2><?php the_title(); ?></h2>
-					<h5><?php echo $services; ?></h5>
+					<h4><?php echo $services; ?></h4>
 					<h6>Client: <?php echo $client; ?></h6>
 
 					<?php the_content(); ?>
@@ -46,7 +46,7 @@ get_header(); ?>
 					<?php if($image3) {
 					echo wp_get_attachment_image( $image3, $size ); } ?>
 			  </div>
-				</article>
+			</article>
 
 	 <?php endwhile; // end of the loop. ?>
 	</div><!-- .main-content -->
