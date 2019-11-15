@@ -13,20 +13,17 @@ Text Domain:  accelerate-theme-child
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-    margin-bottom: 25px;
+    height: auto;
+    padding: 8em 0;
+	text-align: center;
 }
-.social-media-navigation {
-		float: right;
-		width: 20%;
-	}
-
-h1 {
-   font-size: 24px;
-   font-size: 1.5em;
-   line-height: 2.25;
-   color: white;
+.homepage-hero h1 {
+	color: #fff;
+	font-weight:bold;
+	font-size: 2em;
+	line-height: 1.5;
+	margin: 0 2%;
 }
-
 .homepage-hero h3 {
     color: #fff;
     font-family: 'Open Sans';
@@ -35,9 +32,13 @@ h1 {
     margin: 0 0 3em;
 }
 
+ol, ul {
+	list-style: none;
+}
 
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
+
 }
 
 .button {
@@ -96,6 +97,11 @@ aside.case-study-sidebar {
 }
 
 
+div.case-study-images {
+  float: left;
+  width: 500px;
+}
+
 div.case-study-images img {
 	width: 100%;
 	height: auto;
@@ -105,23 +111,16 @@ div.case-study-images img {
 /*Featured Work */
 
 .featured-work {
-  margin: 5px;
-  padding: 10px;
+  margin: 10px;
   font-family: 'Montserrat';
 }
 
 .featured-work h4 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 28px;
-  color: #000000;
-  margin: 5px;
-}
-
-.featured-work h3 {
-  font-size: 22px;
-  font-family: 'Open Sans';
-  margin: 5px;
+  font-size: 18px;
+  color: black;
+  margin: 45px;
 }
 
 .featured-work ol, ul {
@@ -130,57 +129,16 @@ div.case-study-images img {
 
 .individual-featured-work {
   display: inline-block;
-  align-items: center;
+  align: center;
+  margin: 0 5px 0 5px;
+
 }
+
 .individual-featured-work a {
   text-decoration: none;
   font-weight: normal;
-  font-size: 14px;
-  color: black;
-  padding-left: 50px;
+  font-size: 12px;
+  color: #000000;
+  padding-left: 80px;
   align: center;
-}
-
-.individual-featured-work img {
-  clear: both;
-  padding-right: 15px;
-
-}
-
-.social-media-navigation {
-  display: inline-block;
-  color: blue;
-}
-
-
-.ninja-forms-field nf-element {
-    background: blue;
-    border: 0;
-    color: #f7f7f7;
-    transition: all .5s;
-}
-
-.nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit] {
-  background: blue;
-}
-
-.about-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-    margin-bottom: 25px;
-    height: 150px;
-}
-
-.error-page {
-    background: url("img/broken-glass.jpg");
-    height: 800px;
-    margin: 0px;
-    padding: 0px;
-}
-
-.error-page h2 {
-  color:pink;
-  font-size: 56px;
-  text-align: center;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
 }
