@@ -147,11 +147,29 @@ div.case-study-images img {
 
 }
 
-.social-media-navigation {
-  display: inline-block;
-  color: blue;
+
+.social-media-navigation ul {
+    list-style: none;
 }
 
+.social-media-menu li {
+    display: inline-block;
+    width: 40px;
+    margin: 0px 3px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 0.6em;
+}
+
+.social-media-menu li a {
+    color: white;
+}
+
+.social-media-menu  .menu-item i._mi {
+    margin-top: 0;
+}
 
 .ninja-forms-field nf-element {
     background: blue;
