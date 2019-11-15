@@ -32,5 +32,28 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+
+    register_post_type( 'services',
+        array(
+            'labels' => array(
+                'name' => __( 'Services' ),
+                'singular_name' => __( 'Service' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'services' ),
+        )
+    );
 }
 add_action( 'init', 'create_custom_post_types' );
+
+// Add a filter for the contact page
+add_filter( 'body_class','accelerate_child_body_classes' );
+function accelerate_child_body_classes( $classes ) {
+  if (is_page('contact') ) {
+    $classes[] = 'contact';
+  }
+
+    return $classes;
+
+}

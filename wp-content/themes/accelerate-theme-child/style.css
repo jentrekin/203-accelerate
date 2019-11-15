@@ -171,16 +171,60 @@ div.case-study-images img {
     margin-top: 0;
 }
 
-.ninja-forms-field nf-element {
-    background: blue;
-    border: 0;
-    color: #f7f7f7;
-    transition: all .5s;
+/*Contact Form Styles*/
+
+.contact-us p,
+.contact-us h2 {
+    margin: 0 auto;
+    width: 60%;
 }
 
-.nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit] {
-  background: blue;
+.contact-us h2 {
+    font-size: 1.5em;
 }
+
+.contact-us p {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+#nf-form-1-cont {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 60%;
+}
+
+#nf-label-field-1,
+#nf-label-field-2,
+#nf-label-field-3 {
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+#nf-field-1,
+#nf-field-2,
+#nf-field-3 {
+    background: none;
+}
+#nf-field-4 {
+    background-color: #45ac9d;
+    float: right;
+    width: 200px;
+}
+
+.confirmation-header {
+    color: #45ac9d;
+    font-size: 2.1em;
+    text-align: center;
+}
+
+.confirmation-message p {
+    font-size: 1.2em;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/*others*/
 
 .about-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
@@ -201,4 +245,90 @@ div.case-study-images img {
   text-align: center;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
+}
+
+/*About Page*/
+
+.about .hero-content h3 {
+    margin: auto;
+    width: 50%;
+}
+
+.site-content h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.site-content p {
+    text-align: center;
+}
+
+.services-offered {
+  list-style: initial;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+  flex-direction: row-reverse;
+}
+
+.services-offered:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.about-services {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 3em auto;
+    width: 60%;
+}
+
+.figure {
+    width: 25%;
+}
+
+.site-content {
+    width: 70%;
+    flex-direction: row-reverse;
+}
+
+.service-text p {
+    font-family: 'Montserrat', 'Open-Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: grey;
+}
+
+.service h2 {
+    font-family: 'Montserrat', 'Open-Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+.about-contact {
+    border-top: 1px solid #bfbfbf;
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+}
+
+.about-contact-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about-contact h3 {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+.about-contact .button {
+    float: left;
+    margin: 2em .5em .5em;
 }
