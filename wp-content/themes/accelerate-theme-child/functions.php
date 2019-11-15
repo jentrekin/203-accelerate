@@ -33,7 +33,7 @@ function create_custom_post_types() {
         )
     );
 
-    register_post_type( 'services',
+    register_post_type( 'service_type',
         array(
             'labels' => array(
                 'name' => __( 'Services' ),
@@ -41,7 +41,7 @@ function create_custom_post_types() {
             ),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array( 'slug' => 'services' ),
+            'rewrite' => array( 'slug' => 'service' ),
         )
     );
 }
@@ -56,4 +56,9 @@ function accelerate_child_body_classes( $classes ) {
 
     return $classes;
 
+		if (is_page('about') ) {
+		        $classes[] = 'about';
+		         }
+		     return $classes;
+	
 }

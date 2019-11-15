@@ -249,9 +249,11 @@ div.case-study-images img {
 
 /*About Page*/
 
-.about .hero-content h3 {
+.hero-content h3 {
     margin: auto;
-    width: 50%;
+    width: 35%;
+    font-size: 30px;
+    line-height: 1.25;
 }
 
 .site-content h4 {
@@ -261,36 +263,16 @@ div.case-study-images img {
 
 .site-content p {
     text-align: center;
+    width: 60%;
 }
 
 .services-offered {
-  list-style: initial;
-	display: flex;
+  list-style: none;
+	display: inline-block;
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
   flex-direction: row-reverse;
-}
-
-.services-offered:nth-child(even) {
-	flex-direction: row-reverse;
-}
-
-.about-services {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    margin: 3em auto;
-    width: 60%;
-}
-
-.figure {
-    width: 25%;
-}
-
-.site-content {
-    width: 70%;
-    flex-direction: row-reverse;
 }
 
 .service-text p {
@@ -298,12 +280,14 @@ div.case-study-images img {
     font-size: 1em;
     text-align: left;
     color: grey;
+    width: auto;
 }
 
-.service h2 {
+.service-text h2 {
     font-family: 'Montserrat', 'Open-Sans', Arial, Helvetica, sans-serif;
     font-size: 1.3em;
 }
+
 .about-contact {
     border-top: 1px solid #bfbfbf;
     display: flex;
@@ -330,5 +314,5 @@ div.case-study-images img {
 
 .about-contact .button {
     float: left;
-    margin: 2em .5em .5em;
+    margin-top: auto;
 }
