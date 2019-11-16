@@ -173,44 +173,49 @@ div.case-study-images img {
 
 /*Contact Form Styles*/
 
-.contact-us p,
-.contact-us h2 {
+.nf-form-content {
+	width: 600px;
+	margin: 0 auto;
+}
+.main-content p,
+.main-content h2 {
     margin: 0 auto;
     width: 60%;
 }
 
-.contact-us h2 {
+.main-content h2 {
     font-size: 1.5em;
 }
 
-.contact-us p {
+.main-content p {
     font-size: 0.9em;
     font-weight: 500;
 }
 
-#nf-form-1-cont {
+#nf-form-5-cont {
     margin: 0 auto;
     margin-top: 50px;
     width: 60%;
 }
 
-#nf-label-field-1,
-#nf-label-field-2,
-#nf-label-field-3 {
+#nf-label-field-5,
+#nf-label-field-6,
+#nf-label-field-7 {
     font-size: 0.9em;
     font-weight: 100;
 }
 
-#nf-field-1,
-#nf-field-2,
-#nf-field-3 {
+#nf-field-5,
+#nf-field-6,
+#nf-field-7 {
     background: none;
 }
-#nf-field-4 {
+#nf-field-8 {
     background-color: #45ac9d;
     float: right;
     width: 200px;
 }
+
 
 .confirmation-header {
     color: #45ac9d;
@@ -256,12 +261,12 @@ div.case-study-images img {
     line-height: 1.25;
 }
 
-.site-content h4 {
+.about-services h4 {
     text-align: center;
     text-transform: uppercase;
 }
 
-.site-content p {
+.about-services p {
     text-align: center;
     width: 60%;
 }
