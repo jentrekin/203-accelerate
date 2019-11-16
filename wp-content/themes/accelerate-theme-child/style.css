@@ -4,7 +4,7 @@ Theme URI:    http://example.com/accelerate-theme-child/
 Description:  Accelerate Child Theme - Accelerate
 Author:   	Jessica Entrekin
 Author URI:   http://example.com
-Template: 	accelerate-theme-child
+Template: 	accelerate-theme
 Version:      2.0.0
 Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  accelerate-theme-child
@@ -160,7 +160,7 @@ div.case-study-images img {
     text-align: center;
     border-radius: 100%;
     background: rgba(0, 0, 0, 0.8);
-    font-size: 0.6em;
+    font-size: .9em;
 }
 
 .social-media-menu li a {
