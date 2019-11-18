@@ -68,6 +68,53 @@ h1 {
 	text-transform: uppercase;
 }
 
+/*Twitter Feed*/
+
+.tweet-feed {
+    width: 40%;
+    float: left;
+    margin-bottom: 2em;
+    margin-left: 10%;
+}
+
+.tweet-feed h4 {
+  color: #a6a6a6;
+}
+
+.ctf-tweet-text p {
+    margin: 1em auto;
+}
+
+#ctf .ctf-screename-sep, #ctf .ctf-author-name {
+    display: none;
+  }
+
+#ctf.ctf-styles .ctf-author-screenname {
+    margin-bottom: .5em;
+    font: 700 1.5em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-size: 1.5em;
+
+}
+
+/*#ctf.ctf-styles .ctf-twitterlink {
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+	font-weight: 700;
+	color: rgb(69, 172, 157);
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 1em;
+  }*/
+
+  h2.twitterlink {
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+	font-weight: 700;
+	color: rgb(69, 172, 157);
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 1em;
+    margin: 0;
+  }
+
 /*Case Studies */
 
 aside.case-study-sidebar {
@@ -254,58 +301,100 @@ div.case-study-images img {
 
 /*About Page*/
 
-.hero-content h3 {
+.hero-content {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    height: auto;
+    margin: 0 0 1em;
+    padding: 6em 0;
+}
+
+.header-content h3 {
+    width: 50%;
+    text-align: center;
+    font: 600 1.4em/1.65 'Open Sans', Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
     margin: auto;
-    width: 35%;
-    font-size: 30px;
-    line-height: 1.25;
+    padding: 0 1em;
+    color: #fff;
 }
-
-.about-services h4 {
-    text-align: center;
+.services-header h4 {
     text-transform: uppercase;
-}
-
-.about-services p {
     text-align: center;
-    width: 60%;
+    font-size: 0.9em;
 }
 
-.services-offered {
-  list-style: none;
-	display: inline-block;
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
-  flex-direction: row-reverse;
-}
-
-.service-text p {
-    font-family: 'Montserrat', 'Open-Sans', Arial, Helvetica, sans-serif;
+.services-header p {
+    text-align: center;
     font-size: 1em;
-    text-align: left;
-    color: grey;
-    width: auto;
+    font-weight: 300;
+    margin: 1em 0;
 }
 
-.service-text h2 {
-    font-family: 'Montserrat', 'Open-Sans', Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
+.about-page .main-content {
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+ul.about-page-services {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-page-services li {
+    list-style: none;
+    margin: auto;
+    width: 50%;
+}
+
+.individual-service {
+    display: flex;
+}
+
+div .service-container {
+    width: 85%;
+    display: flex;
+    margin: 2em auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: left;
+}
+.about-content h2 {
+    font: 500 1.45em/1.75 'Open Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+div.service-image {
+    justify-content: flex-end;
+}
+
+.individual-service:nth-child(even) .service-container {
+    flex-direction: row-reverse;
 }
 
 .about-contact {
-    border-top: 1px solid #bfbfbf;
     display: flex;
+    width: 960px;
+    margin: 0 auto;
+    border-top: 1px solid #909090; ;
+    align-items: center;
+    align-content: space-between;
     justify-content: center;
-    margin-top: 4em;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 960px;
+
 }
+
 
 .about-contact-container {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -313,6 +402,8 @@ div.case-study-images img {
 
 .about-contact h3 {
     text-align: center;
+    font-weight: bold;
+    font-size: 22px;
     float: left;
     width: 50%;
 }

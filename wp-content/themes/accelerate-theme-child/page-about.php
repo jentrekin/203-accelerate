@@ -11,7 +11,7 @@ get_header(); ?>
 
 <!-- hero section -->
 
-<div id="primary" class="home-page hero-content">
+<div id="primary" class="about-page hero-content">
 	<div class="header-content" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php the_content(); ?>
@@ -22,34 +22,33 @@ get_header(); ?>
 </div><!-- #primary -->
 
 <!-- our services heading section -->
-<div id="about-page">
-	<section class="about-services">
-		<div class="site-content">
-			<h4>OUR SERVICES</h4>
-			<p>We take pride in our clients and the content we create for them. Here is a brief overview of our offered services.</p>
-		</div>
-  </section>
-				<section class="services-offered">
-					<div class="site-content">
+<section class="about-services">
+		<div class="our-services">
+			<div class="services-header">
+				<h4>OUR SERVICES</h4>
+				<p>We take pride in our clients and the content we create for them. Here is a brief overview of our offered services.</p>
+			</div>
+			<ul class="about-page-services">
 						<?php query_posts('post_type=services'); ?>
 						<?php while (have_posts())  : the_post();
 							$service_description = get_field('service_description');
 							$service_image = get_field('service_image');
 							$size = "medium";
 						?>
-						<div class="service">
-							<div class="service-text">
+						<li class="individual-service">
+							<div class="service-container">
+								<div class="service-image"><?php echo wp_get_attachment_image($service_image, $size); ?></div>
+								<div class="about-content">
 									<h2><?php the_title(); ?></h2>
 									<p><?php echo $service_description; ?></p>
+								</div>
 							</div>
-								<figure>
-									<?php echo wp_get_attachment_image($service_image, $size); ?>
-								</figure>
-						</div>
-<?php endwhile; //end of loop.  ?>
-<?php wp_reset_query(); // resets the altered query back to the original?>
-					</div><!-- site-content -->
-  			</section>
+						</li>
+					<?php endwhile; //end of loop.  ?>
+					<?php wp_reset_query(); // resets the altered query back to the original?>
+			</ul>
+		</div><!-- our-services -->
+</section>
 
 <!-- our contact section -->
 
